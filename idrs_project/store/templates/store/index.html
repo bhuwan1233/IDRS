@@ -1,0 +1,194 @@
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NepalTravel - Discover Your Perfect Nepal Adventure</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+     <!-- image file 
+    <img src="{% static 'img/abc-trek.jpg' %}" alt="ABC Trek">
+    <img src="{% static 'img/Annapurna circuit.avif' %}" alt="Annapurna circuit">
+    <img src="{% static 'img/Annapurna-Base-Camp-Trek.webp' %}" alt="Annapurna-Base-Camp-Trek">
+    <img src="{% static 'img/bandipur hill station.jpeg' %}" alt="bandipur hill station">
+    <img src="{% static 'img/chitwan-national-park.jpgnB3.jpg' %}" alt="chitwan-national-park">
+    <img src="{% static 'img/chitwan.jpg' %}" alt="chitwan">
+    <img src="{% static 'img/Everest2011Show322-2400x1800.jpg' %}" alt="Everest2011Show322-2400x1800">
+    <img src="{% static 'img/Gokyo-village_11zon.jpg' %}" alt="Gokyo-village_11zon">
+    <img src="{% static 'img/image logo.jpg' %}" alt="image logo">
+    <img src="{% static 'img/image_processing20181012-4-1yzznz.jpg' %}" alt="image_processing20181012-4-1yzznz">
+    <img src="{% static 'img/image.webp' %}" alt="image">
+    <img src="{% static 'img/images logo.jpg' %}" alt="images logo">
+    <img src="{% static 'img/images.jpg' %}" alt="images">
+    <img src="{% static 'img/img.jpg' %}" alt="img">
+    <img src="{% static 'img/imgd.jpg' %}" alt="imgd">
+    <img src="{% static 'img/imgh.png' %}" alt="imgh">
+    <img src="{% static 'img/kathamandu.jpg' %}" alt="kathamandu">
+    <img src="{% static 'img/logo.jpg' %}" alt="logo">
+    <img src="{% static 'img/lumbini.jpg' %}" alt="lumbini">
+    <img src="{% static 'img/Mount-Everest.webp' %}" alt="Mount-Everest">
+    <img src="{% static 'img/pashupati.jpeg' %}" alt="pashupati">
+    <img src="{% static 'img/photo-1551632811-561732d1e306.jpg' %}" alt="photo-1551632811-561732d1e306">
+    <img src="{% static 'img/pokhara lake.jpg' %}" alt="pokhara lake">
+    <img src="{% static 'img/pokhara-nepal-1080x675.jpg' %}" alt="pokhara-nepal-1080x675">
+    <img src="{% static 'img/singup.webp' %}" alt="singup">
+    <img src="{% static 'img/Staying-at-Everest-Base-Camp js.jpg' %}" alt="Staying-at-Everest-Base-Camp js"> -->
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa"></i>
+                <span>Intelligent Destination</span>
+            </div>
+            <div class="nav-links">
+                <a href="/login" class="nav-btn login-btn">Login</a>
+                <a href="/register" class="nav-btn register-btn">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Nepal Images -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1400&h=800&fit=crop')"></div>
+            <div class="hero-slide" style="background-image: url('/static/img/photo-1551632811-561732d1e306.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('/static/img/image_processing20181012-4-1yzznz.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&h=800&fit=crop')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?w=1400&h=800&fit=crop')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Discover Nepal</span>
+            
+            </h1>
+            <p class="hero-subtitle">Your personalized journey through the roof of the world awaits</p>
+            <div class="hero-buttons">
+                <a href="/register" class="btn btn-primary">Start Your Journey</a>
+                <a href="/login" class="btn btn-secondary">Explore Now</a>
+            </div>
+        </div>
+
+        <!-- Floating Elements 
+        <div class="floating-elements">
+            <i class="fas fa-mountain floating-icon" style="top: 20%; left: 10%;"></i>
+            <i class="fas fa-compass floating-icon" style="bottom: 20%; right: 10%;"></i>
+            <i class="fas fa-camera floating-icon" style="top: 60%; left: 5%;"></i>
+        </div>-->
+    </section>
+
+    <!-- Nepal Gallery Section -->
+    <section class="nepal-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Experience the Beauty of Nepal</h2>
+                <p>From towering peaks to ancient temples, Nepal offers unforgettable experiences</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="/static/img/Everest2011Show322-2400x1800.jpg" alt="Mount Everest">
+                    <div class="gallery-overlay">
+                        <h3>Mount Everest</h3>
+                        <p>The world's highest peak</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/static/img/pokhara-nepal-1080x675.jpg" alt="Pokhara Lake">
+                    <div class="gallery-overlay">
+                        <h3>Pokhara</h3>
+                        <p>A beautiful lakeside city </p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/static/img/chitwan.jpg" alt="chitwan Wildlife">
+                    <div class="gallery-overlay">
+                        <h3>Chitwan</h3>
+                        <p>Wildlife sanctuary</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/static/img/kathamandu.jpg" alt="Kathmandu Temple">
+                    <div class="gallery-overlay">
+                        <h3>Kathmandu</h3>
+                        <p>Ancient temples</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/static/img/Annapurna-Base-Camp-Trek.webp" alt="Annapurna Trek">
+                    <div class="gallery-overlay">
+                        <h3>Annapurna</h3>
+                        <p>Trekking paradise</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Intelligent Destination?</h2>
+                <p>Experience Nepal like never before with our intelligent recommendation system</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Discover Hidden Gems</h3>
+                    <p>Explore Nepal's breathtaking landscapes from the Himalayas to the Terai plains</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3>Personalized Recommendations</h3>
+                    <p>Destination suggestions based on your preferences and travel style</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Local Insights</h3>
+                    <p>Access authentic local knowledge and insider tips from experienced guides</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Curated Experiences</h3>
+                    <p>Handpicked activities and destinations for unforgettable memories</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Nepal Background -->
+    <section class="cta">
+        <div class="cta-background">
+            <img src="/static/img/imgd.jpg" alt="Nepal Mountains">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Explore Nepal?</h2>
+                <p>Join thousands of travelers who have discovered their perfect Nepal adventure</p>
+                <a href="/register" class="btn btn-light">Start Planning Today</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
